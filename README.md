@@ -1,6 +1,6 @@
 # Poemtopia site
 
-> This is a modified fork of https://github.com/HamishMW
+> This is a modified fork of [this project](https://github.com/HamishMW)
 
 Built with [Next.js](https://nextjs.org/), [Three.js](https://threejs.org/), and [Framer Motion](https://www.framer.com/motion/).
 
