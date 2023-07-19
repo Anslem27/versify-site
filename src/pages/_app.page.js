@@ -1,9 +1,9 @@
-import 'layouts/App/reset.css';
-import 'layouts/App/global.css';
+import '../layouts/App/reset.css';
+import '../layouts/App/global.css';
 
 import { Navbar } from 'components/Navbar';
 import { ThemeProvider } from 'components/ThemeProvider';
-import { tokens } from 'components/ThemeProvider/theme';
+import { tokens } from '../components/ThemeProvider/theme';
 import { VisuallyHidden } from 'components/VisuallyHidden';
 import { AnimatePresence, LazyMotion, domAnimation, m } from 'framer-motion';
 import { useFoucFix, useLocalStorage } from 'hooks';

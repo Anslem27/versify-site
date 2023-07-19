@@ -1,13 +1,13 @@
-import gamestackTexture2Large from 'assets/gamestack-list-large.jpg';
-import gamestackTexture2Placeholder from 'assets/gamestack-list-placeholder.jpg';
-import gamestackTexture2 from 'assets/gamestack-list.jpg';
-import gamestackTextureLarge from 'assets/gamestack-login-large.jpg';
-import gamestackTexturePlaceholder from 'assets/gamestack-login-placeholder.jpg';
-import gamestackTexture from 'assets/gamestack-login.jpg';
+import gamestackTexture2Large from '../../assets/book_detail.jpg';
+import gamestackTexture2Placeholder from '../../assets/gamestack-list-placeholder.jpg';
+import gamestackTexture2 from '../../assets/book_detail.jpg';
+import gamestackTextureLarge from '../../assets/search_poems.jpg';
+import gamestackTexturePlaceholder from '../../assets/gamestack-login-placeholder.jpg';
+import gamestackTexture from '../../assets/search_poems.jpg';
 import { Footer } from 'components/Footer';
 import { Meta } from 'components/Meta';
-import { Intro } from 'layouts/Home/Intro';
-import { ProjectSummary } from 'layouts/Home/ProjectSummary';
+import { Intro } from '../../layouts/Home/Intro';
+import { ProjectSummary } from '../../layouts/Home/ProjectSummary';
 import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
 
