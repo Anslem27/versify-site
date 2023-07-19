@@ -1,6 +1,5 @@
 import Head from 'next/head';
 
-const siteUrl = process.env.NEXT_PUBLIC_WEBSITE_URL;
 const name = 'Poemtopia App';
 const twitterHandle = '@anslemAnsy';
 
@@ -16,7 +15,6 @@ export const Meta = ({ title, description, prefix = name }) => {
       <meta property="og:title" content={titleText} />
       <meta property="og:site_name" content={name} />
       <meta property="og:type" content="website" />
-      <meta property="og:url" content={siteUrl} />
       <meta property="og:description" content={description} />
 
       <meta name="twitter:card" content="summary_large_image" />

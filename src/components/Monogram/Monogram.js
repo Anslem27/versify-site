@@ -1,6 +1,7 @@
 import { forwardRef, useId } from 'react';
 import { classes } from 'utils/style';
 import styles from './Monogram.module.css';
+import LogoSvg from "../../assets/logo.svg";
 
 export const Monogram = forwardRef(({ highlight, className, ...props }, ref) => {
   const id = useId();
@@ -17,9 +18,9 @@ export const Monogram = forwardRef(({ highlight, className, ...props }, ref) => 
       {...props}
     >
       <defs>
-
+        {/* menu path */}
         <clipPath id={clipId}>
-          <path d="M16.525 28.462l7.18-18.35.003-.001 9.72 18.442a.838.838 0 001.524-.093l3.39-8.824a.846.846 0 00-.04-.686L30.307 3.605A6.698 6.698 0 0024.367 0h-4.6a.84.84 0 00-.74 1.23l3.63 6.887-3.655 9.15-7.12-13.662A6.698 6.698 0 005.942 0h-4.6a.842.842 0 00-.748 1.23L15 28.554a.839.839 0 001.524-.092zM42.392 8.806a.835.835 0 00.387-.446v.001l2.67-7.23a.838.838 0 00-.785-1.129h-6.578a.837.837 0 00-.736 1.238l3.907 7.226c.22.41.729.56 1.135.34z" />
+          <path d="M14 6H32C32.55 6 33 6.45 33 7C33 7.55 32.55 8 32 8H14C13.45 8 13 7.55 13 7C13 6.45 13.45 6 14 6ZM14 13H32C32.55 13 33 13.45 33 14C33 14.55 32.55 15 32 15H14C13.45 15 13 14.55 13 14C13 13.45 13.45 13 14 13ZM14 20H32C32.55 20 33 20.45 33 21C33 21.55 32.55 22 32 22H14C13.45 22 13 21.55 13 21C13 20.45 13.45 20 14 20Z" />
         </clipPath>
       </defs>
       <rect clipPath={`url(#${clipId})`} width="100%" height="100%" />
