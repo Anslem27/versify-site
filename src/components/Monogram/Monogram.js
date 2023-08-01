@@ -1,7 +1,6 @@
 import { forwardRef, useId } from 'react';
 import { classes } from 'utils/style';
 import styles from './Monogram.module.css';
-import LogoSvg from "../../assets/logo.svg";
 
 export const Monogram = forwardRef(({ highlight, className, ...props }, ref) => {
   const id = useId();

@@ -2,6 +2,11 @@ import gamestackTexture2Large from '../../assets/book_detail.jpg';
 import gamestackTexture2Placeholder from '../../assets/gamestack-list-placeholder.jpg';
 import gamestackTexture2 from '../../assets/book_detail.jpg';
 import gamestackTextureLarge from '../../assets/search_poems.jpg';
+
+
+import offlineBook from '../../assets/offline_book.png';
+import poemReader from '../../assets/poem_reader.png';
+
 import gamestackTexturePlaceholder from '../../assets/gamestack-login-placeholder.jpg';
 import gamestackTexture from '../../assets/search_poems.jpg';
 import { Footer } from 'components/Footer';
@@ -18,9 +23,10 @@ export const Home = () => {
   const [scrollIndicatorHidden, setScrollIndicatorHidden] = useState(false);
   const intro = useRef();
   const projectTwo = useRef();
+  const projectThree= useRef();
 
   useEffect(() => {
-    const sections = [intro, projectTwo];
+    const sections = [intro, projectTwo,projectThree];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -58,8 +64,8 @@ export const Home = () => {
   return (
     <div className={styles.home}>
       <Meta
-        title="Poemtopia"
-        description="Poemtopia is a modern ebook and poem app that aims to provide users with a poetic utopia. 
+        title="Versify"
+        description="Versify is a modern ebook and poem app that aims to provide users with a poetic utopia. 
         It is a place where poetry enthusiasts can explore, and be inspired by the world of poetry"
       />
       <Intro
@@ -74,8 +80,8 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="The poemtopia app"
-        description="Poemtopia is a modern ebook and poem app that aims to provide users with a poetic utopia. 
+        title="The Versify app"
+        description="Versify is a modern ebook and poem app that aims to provide users with a poetic utopia. 
         It is a place where poetry enthusiasts can explore, and be inspired by the world of poetry"
         buttonText="Still in development"
         buttonLink="https://github.com/Anslem27"
@@ -89,6 +95,31 @@ export const Home = () => {
             },
             {
               srcSet: [gamestackTexture2, gamestackTexture2Large],
+              placeholder: gamestackTexture2Placeholder,
+            },
+          ],
+        }}
+      />
+      <ProjectSummary
+        id="project-3"
+        alternate
+        sectionRef={projectThree}
+        visible={visibleSections.includes(projectThree.current)}
+        index={2}
+        title="Lots of exhilarating features."
+        description=""
+        buttonText="Still in development"
+        buttonLink="https://github.com/Anslem27"
+        model={{
+          type: 'phone',
+          alt: 'App screen',
+          textures: [
+            {
+              srcSet: [poemReader, poemReader],
+              placeholder: gamestackTexturePlaceholder,
+            },
+            {
+              srcSet: [offlineBook, offlineBook],
               placeholder: gamestackTexture2Placeholder,
             },
           ],

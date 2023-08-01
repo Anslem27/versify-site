@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-const name = 'Poemtopia App';
+const name = 'Versify App';
 const twitterHandle = '@anslemAnsy';
 
 export const Meta = ({ title, description, prefix = name }) => {
@@ -10,6 +10,12 @@ export const Meta = ({ title, description, prefix = name }) => {
     <Head>
       <title key="title">{titleText}</title>
       <meta key="description" name="description" content={description} />
+
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />   
+      <link rel="manifest" href="/site.webmanifest"></link>
+      
       <meta name="author" content={name} />
 
       <meta property="og:title" content={titleText} />
