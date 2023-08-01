@@ -2,8 +2,7 @@ import { forwardRef, useId } from 'react';
 import Image from 'next/image';
 
 
-export const Monogram = forwardRef(({ highlight, className }) => {
-  const id = useId();
+export const Monogram = forwardRef(({  }) => {
 
   return (
     <div>
