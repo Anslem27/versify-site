@@ -83,7 +83,7 @@ export const Home = () => {
         title="The Versify app"
         description="Versify is a modern ebook and poem app that aims to provide users with a poetic utopia. 
         It is a place where poetry enthusiasts can explore, and be inspired by the world of poetry"
-        buttonText="Still in development"
+        buttonText="Get the beta app"
         buttonLink="https://github.com/Anslem27"
         model={{
           type: 'phone',
@@ -108,7 +108,7 @@ export const Home = () => {
         index={2}
         title="Lots of exhilarating features."
         description=""
-        buttonText="Still in development"
+        buttonText="Get the beta app"
         buttonLink="https://github.com/Anslem27"
         model={{
           type: 'phone',

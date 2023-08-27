@@ -47,7 +47,7 @@ export function Page404() {
                   href="/"
                   icon="chevronRight"
                 >
-                  Back to homepage
+                  Go home
                 </Button>
               </div>
             </div>
