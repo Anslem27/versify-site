@@ -22,11 +22,11 @@ export const Footer = ({ className }) => (
           marginTop: "5px"
         }}
       >
-        <Link href="/privacy_policy" >
+        <Link href="https://raw.githubusercontent.com/Anslem27/versify-site/master/src/assets/marketting/PRIVACY_POLICY.md" >
           Privacy policy
         </Link>
 
-        <Link href={""}>
+        <Link href="https://raw.githubusercontent.com/Anslem27/versify-site/master/src/assets/marketting/TERMS_OF_USE.md">
           Terms of use
         </Link>
       </div>
