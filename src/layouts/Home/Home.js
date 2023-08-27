@@ -7,6 +7,9 @@ import gamestackTextureLarge from '../../assets/search_poems.jpg';
 import offlineBook from '../../assets/offline_book.png';
 import poemReader from '../../assets/poem_reader.png';
 
+import poemLib from "assets/poem_lib.png"
+import book_lib from "assets/book_lib.png"
+
 import gamestackTexturePlaceholder from '../../assets/gamestack-login-placeholder.jpg';
 import gamestackTexture from '../../assets/search_poems.jpg';
 import { Footer } from 'components/Footer';
@@ -23,10 +26,10 @@ export const Home = () => {
   const [scrollIndicatorHidden, setScrollIndicatorHidden] = useState(false);
   const intro = useRef();
   const projectTwo = useRef();
-  const projectThree= useRef();
+  const projectThree = useRef();
 
   useEffect(() => {
-    const sections = [intro, projectTwo,projectThree];
+    const sections = [intro, projectTwo, projectThree];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -74,6 +77,7 @@ export const Home = () => {
         disciplines={disciplines}
         scrollIndicatorHidden={scrollIndicatorHidden}
       />
+      {/* Top Element */}
       <ProjectSummary
         id="project-2"
         alternate
@@ -100,6 +104,33 @@ export const Home = () => {
           ],
         }}
       />
+      {/* Collection Element */}
+      <ProjectSummary
+        id="project-2"
+        alternate
+        sectionRef={projectTwo}
+        visible={visibleSections.includes(projectTwo.current)}
+        index={2}
+        title="Create your own collection"
+        description="Create your personal anthology, and a personal collection of your favourite books."
+        /* buttonText="Get the beta app"
+        buttonLink="https://github.com/Anslem27" */
+        model={{
+          type: 'phone',
+          alt: 'User collection',
+          textures: [
+            {
+              srcSet: [poemLib, poemLib],
+              placeholder: gamestackTexturePlaceholder,
+            },
+            {
+              srcSet: [book_lib, book_lib],
+              placeholder: gamestackTexture2Placeholder,
+            },
+          ],
+        }}
+      />
+      {/* Detail view compoenents */}
       <ProjectSummary
         id="project-3"
         alternate
@@ -108,8 +139,8 @@ export const Home = () => {
         index={2}
         title="Lots of exhilarating features."
         description=""
-        buttonText="Get the beta app"
-        buttonLink="https://github.com/Anslem27"
+        /*         buttonText="Get the beta app"
+                buttonLink="https://github.com/Anslem27" */
         model={{
           type: 'phone',
           alt: 'App screen',
