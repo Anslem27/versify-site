@@ -7,8 +7,8 @@ import gamestackTextureLarge from '../../assets/search_poems.jpg';
 import offlineBook from '../../assets/offline_book.png';
 import poemReader from '../../assets/poem_reader.png';
 
-import poemLib from "assets/poem_lib.png"
-import book_lib from "assets/book_lib.png"
+import poemLib from "assets/poem_lib.png";
+import book_lib from "assets/book_lib.png";
 
 import gamestackTexturePlaceholder from '../../assets/gamestack-login-placeholder.jpg';
 import gamestackTexture from '../../assets/search_poems.jpg';
@@ -19,7 +19,7 @@ import { ProjectSummary } from '../../layouts/Home/ProjectSummary';
 import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
 
-const disciplines = ['Ebooks', 'Poetry', 'Shelves', 'Themes', 'Premium'];
+const disciplines = ['Ebooks', 'Poetry', 'Shelves', 'Themes', 'Versify'];
 
 export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);
